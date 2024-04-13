@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    mtn_response=query_resort_all()
+    mtn_response=query_resort_all().json()
     return render_template("index.html", mtn_data=mtn_response)
 
 @app.route('/detail', methods=['GET', 'POST'])
@@ -17,9 +17,10 @@ def detail():
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
-    temp = 'temp.json'
-    query()
-    return render_template('detail.html')
+    mtn_data = 'temp.json'
+    if not mtn_data.exists():
+        query(mountian=mtn_data)
+    return render_template('detail.html',mtn_data=mtn_data)
 
 
 
@@ -65,12 +66,15 @@ def query_weather(lat, long):
     return response
 
 def query(mountian):
-    response = query_resort(mountian)
-    write_to_file(response.json(),f'{mountian}')
+    if mountian==None:
+        response = query_resort_all()
+        write_to_file(response.json(),'all')
+    else:
+        response = query_resort(mountian)
+        write_to_file(response.json(),f'{mountian}')
 
-    response = query_weather(response.json()["data"]["location"]['latitude'],response.json()["data"]["location"]['longitude'])
-    write_to_file(response.json(),f'{mountian}-weather')
-    print()
+        response = query_weather(response.json()["data"]["location"]['latitude'],response.json()["data"]["location"]['longitude'])
+        write_to_file(response.json(),f'{mountian}-weather')
 
 if __name__ == '__main__':
     app.run(debug=True)

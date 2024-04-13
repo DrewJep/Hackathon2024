@@ -43,10 +43,14 @@ def query_weather(lat, long):
 
 ############################## MAIN ##############################
 def query(mountian):
-    response = query_resort(mountian)
-    write_to_file(response.json(),f'{mountian}')
+    if mountian==None:
+        response = query_resort_all()
+        write_to_file(response.json(),'all')
+    else:
+        response = query_resort(mountian)
+        write_to_file(response.json(),f'{mountian}')
 
-    response = query_weather(response.json()["data"]["location"]['latitude'],response.json()["data"]["location"]['longitude'])
-    write_to_file(response.json(),f'{mountian}-weather')
-    print()
-query("bolton-valley")
+        response = query_weather(response.json()["data"]["location"]['latitude'],response.json()["data"]["location"]['longitude'])
+        write_to_file(response.json(),f'{mountian}-weather')
+
+query(None)
