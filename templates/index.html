@@ -84,17 +84,16 @@
         <div class="qv" style='background-image: url("../static/backgrounds/{{mtn['name']}}.jpeg")'>
             <div class="qvtxt">
             <h2>{{mtn['name']}}</h2>
-            <h2>XX°</h2>
             </div>
             <div class="qvtxt">
-            snow and trail report
+                <form action="http://127.0.0.1:5000/prepare" method="GET">
+                    <input id = "btnSubmit" name = "btnSubmit" type = "submit" value = "Click Here for Snow and Lift Report" >
+                </form>
             </div>
         </div>
 
         {% endfor %}
         
-
-
 
     </div>
     <div class="vl"></div>
