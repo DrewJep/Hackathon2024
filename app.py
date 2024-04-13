@@ -18,7 +18,7 @@ def detail():
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
-    mtn_data=request.form('btnSubmit')
+    mtn_data=request.form('search')
     query(mountian=mtn_data)
     return render_template('detail.html',mtn=mtn_data)
 
