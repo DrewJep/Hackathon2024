@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        h1 {
+            font-family: Verdana, sans-serif;
+            /* padding: 10px; */
+        }
+
+        header {
+            background-color: lightblue;
+            text-align: center;
+            padding: 1%;
+        }
+
+        .quickviews {
+            display: flex;
+            float: left;
+            padding: 10px;
+            width: 55%;
+        }
+
+        .mapview {
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 10px;
+            width: 40%;
+        }
+
+        .vl {
+            border-left: 2px solid lightgray;
+            height: 95%;
+            position: absolute;
+            left: 57%;
+            margin-left: -3px;
+            margin-top: 10px;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='styles/index.css') }}"> -->
     <title>Document</title>
 </head>
+<header>
+    <h1>How's the Weather Up There?</h1>
+</header>
 <body>
+    
+    <div class="quickviews">test</div>
+    <div class="vl"></div>
+    <div class="mapview">test</div>
     
 </body>
 </html>
