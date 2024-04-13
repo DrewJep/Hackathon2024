@@ -6,14 +6,13 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     return render_template("index.html")
 
 @app.route('/detail', methods=['GET', 'POST'])
 def detail():
-    return render_template("detial.html")
+    return render_template("detail.html")
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
@@ -71,3 +70,6 @@ def query(mountian):
     response = query_weather(response.json()["data"]["location"]['latitude'],response.json()["data"]["location"]['longitude'])
     write_to_file(response.json(),f'{mountian}-weather')
     print()
+
+if __name__ == '__main__':
+    app.run(debug=True)
