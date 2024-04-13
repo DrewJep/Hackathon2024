@@ -77,21 +77,16 @@
     
     <div class="quickviews">
         
-        {% for mtn in mtn_data %}
-
-        <form action="http://127.0.0.1:5000/prepare.html">
-
+        {% for mtn in mtn_data[data] %}
         <div class="qv" style='background-image: url("../static/backgrounds/49 Degrees North.jpeg")'>
             <div class="qvtxt">
-            <h2>Mtn Name</h2>
+            <h2>{{mtn[0]}}</h2>
             <h2>XX°</h2>
             </div>
             <div class="qvtxt">
             snow and trail report
             </div>
         </div>
-
-        </form>
 
         {% endfor %}
         
