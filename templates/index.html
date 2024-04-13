@@ -26,13 +26,16 @@
             float: left;
             padding: 10px;
             width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 3 columns with equal width */
+            grid-gap: 1px; /* Gap between grid items */
         }
 
         .qv {
             display: block;
-            padding: 10px;
-            margin: 20px;
-            width: 45%;
+            padding: 5px;
+            margin: 10px;
+            width: 80%;
             /* background-image: url('../static/backgrounds/Bolton Valley.jpeg'); */
             background-size: cover;
             border-radius: 5px;
@@ -58,7 +61,7 @@
 
         .vl {
             border-left: 2px solid gray;
-            height: 95%;
+            height: 220%;
             position: absolute;
             left: 57%;
             margin-left: -3px;
