@@ -1,11 +1,11 @@
 from flask import *
 import requests
 import json
+from pathlib import Path
 
 
 app = Flask(__name__)
 
-app.config.from_object('config')
 
 @app.route('/index', methods=['GET', 'POST'])
 def index():
@@ -17,8 +17,8 @@ def detail():
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
-    # temp = 1
-    # query()
+    temp = 'temp.json'
+    query()
     return render_template('detail.html')
 
 
