@@ -18,9 +18,12 @@ def detail():
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
-    mtn_data=request.form('search')
-    query(mountian=mtn_data)
-    return render_template('detail.html',mtn=mtn_data)
+    print(request.form)  # Print form data for debugging
+    mtn_data = request.form.get('search')
+    print("Mountain Data:", mtn_data)  # Print specific data for debugging
+    mtn_data=query_resort(mtn_data).json()
+    print(mtn_data)
+    return render_template('detail.html', mtn=mtn_data)
 
 
 #### API Stuff ####

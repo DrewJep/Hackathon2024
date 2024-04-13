@@ -22,6 +22,7 @@
         }
 
         .info {
+            margin-top: 5%;
             display: flex;
             width: 100%;
             float: left;
@@ -32,13 +33,11 @@
             display: flex;
             width: 45%;
             float: left;
-            background-color: red;
         }
         .vis {
             display: flex;
             width: 45%;
             float: right;
-            background-color: blue;
         }
 
         .vl {
@@ -54,7 +53,6 @@
             display: flex;
             width: 100%;
             float: left;
-            background-color: green;
             margin-top: 15%;
         }
 
@@ -75,8 +73,8 @@
     <title>Document</title>
 </head>
 <header>
-    <h1>Mountain Name</h1>
-    <p>{{mtn['url']}}</p>
+    <h1>{{mtn['data']['name']}}</h1>
+    <p>{{mtn['data']['url']}}</p>
 </header>
 <body>
 
@@ -85,11 +83,11 @@
         <table>
             <tr>
                 <td>State</td>
-                <td>{{mtn['region']}}</td>
+                <td>{{mtn['data']['region']}}</td>
             </tr>
             <tr>
                 <td>Location</td>
-                <td>{{mtn['location']}}</td>
+                <td>{{mtn['data']['location']}}</td>
             </tr>
             <tr>
                 <td>Weather</td>
@@ -97,7 +95,15 @@
             </tr>
             <tr>
                 <td>Website</td>
-                <td>{{mtn['url']}}</td>
+                <td>{{mtn['data']['href']}}</td>
+            </tr>
+            <tr>
+                <td>Lifts Open</td>
+                <td>{{mtn['data']['lifts']['stats']['open']}}</td>
+            </tr>
+            <tr>
+                <td>Lifts Closed</td>
+                <td>{{mtn['data']['lifts']['stats']['closed']}}</td>
             </tr>
         </table>
         </div>
@@ -106,14 +112,13 @@
         </div>
     
         <div class="vis">
-            <img src="../static/backgrounds/{{mtn['name']}}.jpeg" alt="map">
+            <img src="../static/backgrounds/{{mtn['data']['name']}}.jpeg" alt="map">
             
         </div>
 
     </div>
 
     <div class="weather">
-        test
     </div>
     
 </body>
