@@ -1,14 +1,13 @@
 from flask import *
 
-
 app = Flask(__name__)
 
 app.config.from_object('config')
 
 @app.route('/login', methods=['GET', 'POST'])
 def index():
-    pass
+    return render_template("index.html")
 
 @app.route('/detail', methods=['GET', 'POST'])
 def detail():
-    pass
+    return render_template("detial.html")
