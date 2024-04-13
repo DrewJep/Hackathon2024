@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        header {
+            background-color: navy;
+            text-align: center;
+            padding: 1%;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        .quickviews {
+            display: flex;
+            float: left;
+            padding: 10px;
+            width: 50%;
+            display: block;
+        }
+
+        .qv {
+            padding: 10px;
+            margin: 20px;
+            width: 100%;
+            /* background-image: url('../static/backgrounds/Bolton Valley.jpeg'); */
+            background-size: cover;
+            border-radius: 5px;
+            overflow-y: scroll;
+        }
+
+        .qvtxt {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            background: rgba(204, 204, 204, 0.7);
+            border-radius: 5px;
+        }
+
+        .mapview {
+            display: flex;
+            justify-content: center;
+            float: right;
+            padding: 10px;
+            width: 40%;
+            size: 0cap;
+        }
+
+        .vl {
+            border-left: 2px solid gray;
+            height: 95%;
+            position: absolute;
+            left: 57%;
+            margin-left: -3px;
+            margin-top: 10px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>How's the Weather Up There?</h1>
+</header>
+<body>
+    
+    <div class="quickviews">
+        
+        {% for mtn in mtns %}
+
+        <form action="http://127.0.0.1:5000/prepare.html">
+
+        <div class="qv" style='background-image: url("../static/backgrounds/49 Degrees North.jpeg")'>
+            <div class="qvtxt">
+            <h2>Mtn Name</h2>
+            <h2>XX°</h2>
+            </div>
+            <div class="qvtxt">
+            snow and trail report
+            </div>
+        </div>
+
+        </form>
+
+        {% endfor %}
+        
+
+
+
+    </div>
+    <div class="vl"></div>
+    <div class="mapview">
+        <img src="../static/backgrounds/Big Sky.jpeg" alt="map" width="100%">
+    </div>
+    
+</body>
+</html>
