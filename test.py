@@ -55,11 +55,3 @@ def query(mountian):
 
 query(None)
 
-with open('data/all.json', "r") as file:
-    # Load the JSON data from the file
-    data = json.load(file)
-    print(data.json())
-    # temp = "49 Degrees North"
-    # for i in data:
-    #     if data['name']==temp:
-    #         print("hi")

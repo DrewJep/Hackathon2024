@@ -18,11 +18,9 @@ def detail():
 
 @app.route('/prepare', methods=['GET', 'POST'])
 def prepare():
-    mtn_data = 'temp.json'
-    if not mtn_data.exists():
-        query(mountian=mtn_data)
-    return render_template('detail.html',mtn_data=mtn_data)
-
+    mtn_data=request.form('btnSubmit')
+    query(mountian=mtn_data)
+    return render_template('detail.html',mtn=mtn_data)
 
 
 #### API Stuff ####
