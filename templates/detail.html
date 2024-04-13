@@ -71,32 +71,30 @@
     <title>Document</title>
 </head>
 <header>
-    <h1>How's the Weather Up There?</h1>
+    <h1>Mountain Name</h1>
 </header>
 <body>
-    
-    <div class="quickviews">
+
+    <div class="info">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Elevation</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            <td>Mountain Snow Report</td>
+        </tr>
+        <tr>
+            <td>Big Sky</td>
+            <td>11166</td>
+            <td>45.285</td>
+            <td>-111.401</td>
+            <td>Big Sky Snow Report</td>
+        </tr>
+    </table>
+    <div class="vis">
+
         
-        {% for mtn in mtn_data[data] %}
-        <div class="qv" style='background-image: url("../static/backgrounds/49 Degrees North.jpeg")'>
-            <div class="qvtxt">
-            <h2>{{mtn[0]}}</h2>
-            <h2>XX°</h2>
-            </div>
-            <div class="qvtxt">
-            snow and trail report
-            </div>
-        </div>
-
-        {% endfor %}
-        
-
-
-
-    </div>
-    <div class="vl"></div>
-    <div class="mapview">
-        <img src="../static/backgrounds/Big Sky.jpeg" alt="map" width="100%">
     </div>
     
 </body>
