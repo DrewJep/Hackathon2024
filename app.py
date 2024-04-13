@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    return render_template("index.html")
+    mtn_response=query_resort_all()
+    return render_template("index.html", mtn_data=mtn_response)
 
 @app.route('/detail', methods=['GET', 'POST'])
 def detail():
