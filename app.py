@@ -9,6 +9,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     mtn_response=query_resort_all().json()
+    print(mtn_response)
     return render_template("index.html", mtn_data=mtn_response)
 
 @app.route('/detail', methods=['GET', 'POST'])
