@@ -12,7 +12,7 @@
         }
 
         header {
-            background-color: navy;
+            background-color: lightblue;
             text-align: center;
             padding: 1%;
         }
@@ -21,48 +21,52 @@
             background-color: lightgray;
         }
 
-        .quickviews {
+        .info {
             display: flex;
-            float: left;
-            padding: 10px;
-            width: 50%;
-            display: block;
-        }
-
-        .qv {
-            padding: 10px;
-            margin: 20px;
             width: 100%;
-            /* background-image: url('../static/backgrounds/Bolton Valley.jpeg'); */
-            background-size: cover;
-            border-radius: 5px;
-            overflow-y: scroll;
-        }
-
-        .qvtxt {
-            display: flex;
-            padding: 5px;
+            float: left;
             justify-content: space-between;
-            background: rgba(204, 204, 204, 0.7);
-            border-radius: 5px;
         }
-
-        .mapview {
+        
+        .tbl {
             display: flex;
-            justify-content: center;
+            width: 45%;
+            float: left;
+            background-color: red;
+        }
+        .vis {
+            display: flex;
+            width: 45%;
             float: right;
-            padding: 10px;
-            width: 40%;
-            size: 0cap;
+            background-color: blue;
         }
 
         .vl {
             border-left: 2px solid gray;
-            height: 95%;
+            height: 45%;
             position: absolute;
-            left: 57%;
+            left: 50%;
             margin-left: -3px;
             margin-top: 10px;
+        }
+
+        .weather {
+            display: flex;
+            width: 100%;
+            float: left;
+            background-color: green;
+            margin-top: 15%;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
         }
     </style>
 <head>
@@ -72,29 +76,44 @@
 </head>
 <header>
     <h1>Mountain Name</h1>
+    <p>{{mtn['url']}}</p>
 </header>
 <body>
 
     <div class="info">
-    <table>
-        <tr>
-            <td>Name</td>
-            <td>Elevation</td>
-            <td>Latitude</td>
-            <td>Longitude</td>
-            <td>Mountain Snow Report</td>
-        </tr>
-        <tr>
-            <td>Big Sky</td>
-            <td>11166</td>
-            <td>45.285</td>
-            <td>-111.401</td>
-            <td>Big Sky Snow Report</td>
-        </tr>
-    </table>
-    <div class="vis">
+        <div class="tbl">
+        <table>
+            <tr>
+                <td>State</td>
+                <td>{{mtn['region']}}</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>{{mtn['location']}}</td>
+            </tr>
+            <tr>
+                <td>Weather</td>
+                <td>XX°</td>
+            </tr>
+            <tr>
+                <td>Website</td>
+                <td>{{mtn['url']}}</td>
+            </tr>
+        </table>
+        </div>
 
-        
+        <div class="vl">
+        </div>
+    
+        <div class="vis">
+            <img src="../static/backgrounds/{{mtn['name']}}.jpeg" alt="map">
+            
+        </div>
+
+    </div>
+
+    <div class="weather">
+        test
     </div>
     
 </body>
