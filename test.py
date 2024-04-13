@@ -2,7 +2,7 @@ import requests
 import json
 
 def write_to_file(response,name):
-    file_path = f"{name}.json"
+    file_path = f"data/{name}.json"
     # Open the file in write mode
     with open(file_path, "w") as file:
         # Write the JSON data to the file
