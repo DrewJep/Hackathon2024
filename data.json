@@ -1,285 +1,432 @@
 {
-    "page": 1,
-    "per_page": 25,
-    "pre_page": null,
-    "next_page": 2,
-    "total": 148,
-    "total_pages": 6,
-    "data": [
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
         {
-            "slug": "49-degrees-north",
-            "name": "49 Degrees North",
-            "country": "US",
-            "region": "WA",
-            "location": {
-                "latitude": 48.302353,
-                "longitude": -117.564011
-            },
-            "url": "https://api.skiapi.com/v1/resort/49-degrees-north"
-        },
-        {
-            "slug": "alpine-meadows",
-            "name": "Alpine Meadows",
-            "country": "US",
-            "region": "CA",
-            "location": {
-                "latitude": 39.148201,
-                "longitude": -120.150902
-            },
-            "url": "https://api.skiapi.com/v1/resort/alpine-meadows"
-        },
-        {
-            "slug": "alta",
-            "name": "Alta",
-            "country": "US",
-            "region": "UT",
-            "location": {
-                "latitude": 40.583828,
-                "longitude": -111.63726
-            },
-            "url": "https://api.skiapi.com/v1/resort/alta"
-        },
-        {
-            "slug": "alyeska",
-            "name": "Alyeska",
-            "country": "US",
-            "region": "AK",
-            "location": {
-                "latitude": 60.961445,
-                "longitude": -149.102676
-            },
-            "url": "https://api.skiapi.com/v1/resort/alyeska"
-        },
-        {
-            "slug": "angel-fire",
-            "name": "Angel Fire",
-            "country": "US",
-            "region": "NM",
-            "location": {
-                "latitude": 36.387402,
-                "longitude": -105.273903
-            },
-            "url": "https://api.skiapi.com/v1/resort/angel-fire"
-        },
-        {
-            "slug": "arapahoe-basin",
-            "name": "Arapaho Basin",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.642464,
-                "longitude": -105.871872
-            },
-            "url": "https://api.skiapi.com/v1/resort/arapahoe-basin"
-        },
-        {
-            "slug": "aspen-highlands",
-            "name": "Aspen Highlands",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.182522,
-                "longitude": -106.855904
-            },
-            "url": "https://api.skiapi.com/v1/resort/aspen-highlands"
-        },
-        {
-            "slug": "aspen-mountain",
-            "name": "Aspen Mountain",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.186714,
-                "longitude": -106.819275
-            },
-            "url": "https://api.skiapi.com/v1/resort/aspen-mountain"
-        },
-        {
-            "slug": "attitash",
-            "name": "Attitash",
-            "country": "US",
-            "region": "NH",
-            "location": {
-                "latitude": 44.077778,
-                "longitude": -71.282776
-            },
-            "url": "https://api.skiapi.com/v1/resort/attitash"
-        },
-        {
-            "slug": "beavercreek",
-            "name": "Beaver Creek",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.600464,
-                "longitude": -106.517899
-            },
-            "url": "https://api.skiapi.com/v1/resort/beavercreek"
-        },
-        {
-            "slug": "big-sky",
-            "name": "Big Sky",
-            "country": "US",
-            "region": "MT",
-            "location": {
-                "latitude": 45.283333,
-                "longitude": -111.401389
-            },
-            "url": "https://api.skiapi.com/v1/resort/big-sky"
-        },
-        {
-            "slug": "big-white",
-            "name": "Big White",
-            "country": "CA",
-            "region": "BC",
-            "location": {
-                "latitude": 49.888,
-                "longitude": -119.495399
-            },
-            "url": "https://api.skiapi.com/v1/resort/big-white"
-        },
-        {
-            "slug": "bluemountain",
-            "name": "Blue Mountain",
-            "country": "CA",
-            "region": "ON",
-            "location": {
-                "latitude": 44.50758,
-                "longitude": -80.316116
-            },
-            "url": "https://api.skiapi.com/v1/resort/bluemountain"
-        },
-        {
-            "slug": "bolton-valley",
-            "name": "Bolton Valley",
-            "country": "US",
-            "region": "VT",
-            "location": {
-                "latitude": 44.421673,
-                "longitude": -72.84948
-            },
-            "url": "https://api.skiapi.com/v1/resort/bolton-valley"
-        },
-        {
-            "slug": "boreal",
-            "name": "Boreal",
-            "country": "US",
-            "region": "CA",
-            "location": {
-                "latitude": 39.316502,
-                "longitude": -120.270203
-            },
-            "url": "https://api.skiapi.com/v1/resort/boreal"
-        },
-        {
-            "slug": "breck",
-            "name": "Breckenridge",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.480724,
-                "longitude": -106.066238
-            },
-            "url": "https://api.skiapi.com/v1/resort/breck"
-        },
-        {
-            "slug": "brettonwoods",
-            "name": "Bretton Woods",
-            "country": "US",
-            "region": "NH",
-            "location": {
-                "latitude": 44.077122,
-                "longitude": -71.340408
-            },
-            "url": "https://api.skiapi.com/v1/resort/brettonwoods"
-        },
-        {
-            "slug": "brianhead",
-            "name": "Brian Head",
-            "country": "US",
-            "region": "UT",
-            "location": {
-                "latitude": 37.692753,
-                "longitude": -112.848129
-            },
-            "url": "https://api.skiapi.com/v1/resort/brianhead"
-        },
-        {
-            "slug": "bridger-bowl",
-            "name": "Bridger Bowl",
-            "country": "US",
-            "region": "MT",
-            "location": {
-                "latitude": 45.817974,
-                "longitude": -110.89814
-            },
-            "url": "https://api.skiapi.com/v1/resort/bridger-bowl"
-        },
-        {
-            "slug": "brighton",
-            "name": "Brighton",
-            "country": "US",
-            "region": "UT",
-            "location": {
-                "latitude": 40.620697,
-                "longitude": -111.592041
-            },
-            "url": "https://api.skiapi.com/v1/resort/brighton"
-        },
-        {
-            "slug": "bromley-mountain",
-            "name": "Bromley Mountain",
-            "country": "US",
-            "region": "VT",
-            "location": {
-                "latitude": 43.213402,
-                "longitude": -72.935013
-            },
-            "url": "https://api.skiapi.com/v1/resort/bromley-mountain"
-        },
-        {
-            "slug": "burke-mountain",
-            "name": "Burke Mountain",
-            "country": "US",
-            "region": "VT",
-            "location": {
-                "latitude": 44.587898,
-                "longitude": -71.91745
-            },
-            "url": "https://api.skiapi.com/v1/resort/burke-mountain"
-        },
-        {
-            "slug": "buttermilk",
-            "name": "Buttermilk",
-            "country": "US",
-            "region": "CO",
-            "location": {
-                "latitude": 39.206944,
-                "longitude": -106.860474
-            },
-            "url": "https://api.skiapi.com/v1/resort/buttermilk"
-        },
-        {
-            "slug": "caberfae-peaks",
-            "name": "Caberfae Peaks",
-            "country": "US",
-            "region": "MI",
-            "location": {
-                "latitude": 44.245014,
-                "longitude": -85.719765
-            },
-            "url": "https://api.skiapi.com/v1/resort/caberfae-peaks"
-        },
-        {
-            "slug": "camelback",
-            "name": "Camelback Mountain",
-            "country": "US",
-            "region": "PA",
-            "location": {
-                "latitude": 41.051389,
-                "longitude": -75.355
-            },
-            "url": "https://api.skiapi.com/v1/resort/camelback"
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
         }
-    ]
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -97.1089731,
+                    39.7668263
+                ],
+                [
+                    -97.1085269,
+                    39.7447788
+                ],
+                [
+                    -97.0798467,
+                    39.7451195
+                ],
+                [
+                    -97.08028680000001,
+                    39.767167
+                ],
+                [
+                    -97.1089731,
+                    39.7668263
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "updated": "2024-04-13T17:26:50+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2024-04-13T17:46:18+00:00",
+        "updateTime": "2024-04-13T17:26:50+00:00",
+        "validTimes": "2024-04-13T11:00:00+00:00/P7DT14H",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 441.96
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "This Afternoon",
+                "startTime": "2024-04-13T12:00:00-05:00",
+                "endTime": "2024-04-13T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 87,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 7.222222222222222
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 34
+                },
+                "windSpeed": "15 to 20 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                "shortForecast": "Mostly Sunny",
+                "detailedForecast": "Mostly sunny, with a high near 87. South wind 15 to 20 mph, with gusts as high as 30 mph."
+            },
+            {
+                "number": 2,
+                "name": "Tonight",
+                "startTime": "2024-04-13T18:00:00-05:00",
+                "endTime": "2024-04-14T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 52,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 79
+                },
+                "windSpeed": "5 to 20 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 52. Southwest wind 5 to 20 mph, with gusts as high as 30 mph."
+            },
+            {
+                "number": 3,
+                "name": "Sunday",
+                "startTime": "2024-04-14T06:00:00-05:00",
+                "endTime": "2024-04-14T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 88,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 85
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/skc?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 88. North wind 5 to 10 mph."
+            },
+            {
+                "number": 4,
+                "name": "Sunday Night",
+                "startTime": "2024-04-14T18:00:00-05:00",
+                "endTime": "2024-04-15T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 56,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 76
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "E",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 56. East wind 5 to 10 mph."
+            },
+            {
+                "number": 5,
+                "name": "Monday",
+                "startTime": "2024-04-15T06:00:00-05:00",
+                "endTime": "2024-04-15T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 85,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 30
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 16.666666666666668
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 86
+                },
+                "windSpeed": "10 to 25 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/day/wind_sct/tsra_hi,30?size=medium",
+                "shortForecast": "Mostly Sunny then Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of rain showers between 1pm and 4pm, then a chance of showers and thunderstorms. Mostly sunny, with a high near 85. Southeast wind 10 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 30%."
+            },
+            {
+                "number": 6,
+                "name": "Monday Night",
+                "startTime": "2024-04-15T18:00:00-05:00",
+                "endTime": "2024-04-16T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 59,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 90
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 15.555555555555555
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 88
+                },
+                "windSpeed": "25 to 30 mph",
+                "windDirection": "S",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_hi,60/tsra_hi,90?size=medium",
+                "shortForecast": "Showers And Thunderstorms",
+                "detailedForecast": "Showers and thunderstorms. Mostly cloudy, with a low around 59. South wind 25 to 30 mph, with gusts as high as 45 mph. Chance of precipitation is 90%."
+            },
+            {
+                "number": 7,
+                "name": "Tuesday",
+                "startTime": "2024-04-16T06:00:00-05:00",
+                "endTime": "2024-04-16T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 75,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 90
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 14.444444444444445
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 93
+                },
+                "windSpeed": "20 to 25 mph",
+                "windDirection": "SW",
+                "icon": "https://api.weather.gov/icons/land/day/tsra_hi,90/tsra_hi,70?size=medium",
+                "shortForecast": "Showers And Thunderstorms",
+                "detailedForecast": "Showers and thunderstorms. Mostly sunny, with a high near 75. Southwest wind 20 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 90%."
+            },
+            {
+                "number": 8,
+                "name": "Tuesday Night",
+                "startTime": "2024-04-16T18:00:00-05:00",
+                "endTime": "2024-04-17T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 50,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 60
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 9.444444444444445
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 72
+                },
+                "windSpeed": "20 to 25 mph",
+                "windDirection": "W",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_hi,60/tsra_hi,30?size=medium",
+                "shortForecast": "Showers And Thunderstorms Likely",
+                "detailedForecast": "Showers and thunderstorms likely before 1am, then a slight chance of showers and thunderstorms. Partly cloudy, with a low around 50. West wind 20 to 25 mph, with gusts as high as 40 mph. Chance of precipitation is 60%."
+            },
+            {
+                "number": 9,
+                "name": "Wednesday",
+                "startTime": "2024-04-17T06:00:00-05:00",
+                "endTime": "2024-04-17T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 69,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 20
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 5
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 73
+                },
+                "windSpeed": "20 to 25 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/day/tsra_hi,20/wind_sct?size=medium",
+                "shortForecast": "Slight Chance Showers And Thunderstorms then Mostly Sunny",
+                "detailedForecast": "A slight chance of showers and thunderstorms before 7am. Mostly sunny, with a high near 69. Northwest wind 20 to 25 mph, with gusts as high as 35 mph. Chance of precipitation is 20%."
+            },
+            {
+                "number": 10,
+                "name": "Wednesday Night",
+                "startTime": "2024-04-17T18:00:00-05:00",
+                "endTime": "2024-04-18T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 40,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 30
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 1.6666666666666667
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 72
+                },
+                "windSpeed": "15 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/night/sct/rain_showers,30?size=medium",
+                "shortForecast": "Partly Cloudy then Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers after 1am. Partly cloudy, with a low around 40. Chance of precipitation is 30%."
+            },
+            {
+                "number": 11,
+                "name": "Thursday",
+                "startTime": "2024-04-18T06:00:00-05:00",
+                "endTime": "2024-04-18T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 59,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 30
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 2.2222222222222223
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 79
+                },
+                "windSpeed": "15 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers,30/bkn?size=medium",
+                "shortForecast": "Chance Rain Showers then Partly Sunny",
+                "detailedForecast": "A chance of rain showers before 7am. Partly sunny, with a high near 59. Chance of precipitation is 30%."
+            },
+            {
+                "number": 12,
+                "name": "Thursday Night",
+                "startTime": "2024-04-18T18:00:00-05:00",
+                "endTime": "2024-04-19T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 36,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": -0.5555555555555556
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 67
+                },
+                "windSpeed": "10 to 15 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 36."
+            },
+            {
+                "number": 13,
+                "name": "Friday",
+                "startTime": "2024-04-19T06:00:00-05:00",
+                "endTime": "2024-04-19T18:00:00-05:00",
+                "isDaytime": true,
+                "temperature": 57,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": -2.7777777777777777
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 69
+                },
+                "windSpeed": "15 to 20 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                "shortForecast": "Mostly Sunny",
+                "detailedForecast": "Mostly sunny, with a high near 57."
+            },
+            {
+                "number": 14,
+                "name": "Friday Night",
+                "startTime": "2024-04-19T18:00:00-05:00",
+                "endTime": "2024-04-20T06:00:00-05:00",
+                "isDaytime": false,
+                "temperature": 33,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": -3.888888888888889
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 65
+                },
+                "windSpeed": "10 to 20 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/night/few?size=medium",
+                "shortForecast": "Mostly Clear",
+                "detailedForecast": "Mostly clear, with a low around 33."
+            }
+        ]
+    }
 }
